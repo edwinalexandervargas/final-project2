@@ -18,6 +18,16 @@
 }
 
 
+.section__tag,
+.section__title {
+    text-align: center;
+}
+
+.section__para {
+    margin: 12px;
+}
+
+
 h1 {
     font-size: 36px;
 }
@@ -97,8 +107,13 @@ li {
     justify-content: space-between;
 }
 
+.header__figure {
+    width: 60%;
+}
+
 .header__img {
-    width: 70%;
+    margin: 0 24px;
+    height: 400px;
 }
 
 .email-input-group {
@@ -137,10 +152,48 @@ li {
 .features {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .feature {
     display: flex;
     width: calc(100% / 3);
+    gap: 2rem;
 }
 
+.feature__description {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* quality work section */
+
+.section-info-main {
+    display: flex;
+    text-align: center;
+}
+
+.section__para {
+    margin: 24px;
+}
+
+.section__info {
+    width: 40%;
+}
+
+.section__figure {
+    width: 60%;
+}
+
+.section__img {
+    height: 300px;
+}
+
+.section__button {
+    color: white;
+    background-color: rgba(80, 17, 204);
+    padding: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+}
