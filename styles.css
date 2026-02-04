@@ -197,3 +197,39 @@ li {
     border-radius: 50px;
     cursor: pointer;
 }
+
+.section__title {
+    margin: 16px 0;
+}
+
+
+/* steps */
+
+.step {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step__description {
+    margin-left: 20px;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-weight: 600px;
+    font-size: 36px;
+}
+
+.step__title {
+    color: #243e63;
+    font-family: 600;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.step__para {
+    color: #718096;
+    font-weight: 500    ;
+    font-size: 14px;
+    margin-top: 12px;
+}
