@@ -207,7 +207,6 @@ li {
 
 .step {
     display: flex;
-    justify-content: space-between;
 }
 
 .step__description {
@@ -229,7 +228,16 @@ li {
 
 .step__para {
     color: #718096;
-    font-weight: 500    ;
+    font-weight: 500;
     font-size: 14px;
     margin-top: 12px;
 }
+
+
+/* values */
+
+.value__description {
+   display: flex;
+   flex-direction: column;
+}
+
