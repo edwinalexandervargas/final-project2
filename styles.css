@@ -176,6 +176,8 @@ li {
 
 .section__para {
     margin: 24px;
+    color: #718096;
+    line-height: 1.5;
 }
 
 .section__info {
@@ -187,7 +189,7 @@ li {
 }
 
 .section__img {
-    height: 300px;
+    height: 400px;
 }
 
 .section__button {
@@ -241,3 +243,27 @@ li {
    flex-direction: column;
 }
 
+.value__list--wrapper {
+    display: flex;
+}
+
+.figure__wrapper {
+    display: flex;
+}
+
+.value__name {
+    margin-left: 12px;
+}
+
+.figure__logo {
+    background-color: #9ae6b4;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.value__name {
+    color: #243e63;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 12px;
+}
