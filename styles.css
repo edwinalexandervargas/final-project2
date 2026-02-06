@@ -256,8 +256,8 @@ li {
 }
 
 .figure__logo {
-    background-color: #9ae6b4;
     padding: 8px;
+    background-color: #9ae6b4;
     border-radius: 50%;
 }
 
@@ -266,4 +266,13 @@ li {
     font-size: 20px;
     font-weight: bold;
     margin-left: 12px;
+}
+
+
+/* plans */
+
+
+.plan {
+    display: flex;
+    justify-content: space-around;
 }
