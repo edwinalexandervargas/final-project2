@@ -178,6 +178,7 @@ li {
     margin: 24px;
     color: #718096;
     line-height: 1.5;
+    text-align: center;
 }
 
 .section__info {
@@ -270,9 +271,68 @@ li {
 
 
 /* plans */
-
+.plans {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 .plan {
     display: flex;
     justify-content: space-around;
 }
+
+.plan__name {
+    font-size: 20px;
+}
+
+.plan__price {
+    font-size: 48px;
+}
+
+.plan__duration {
+    font-size: 12px;
+}
+
+.plan__top,
+.plan__middle,
+.plan__bottom {
+    text-align: center;
+}
+
+.plan:nth-child(1) .plan__stripe, .plan:nth-child(1) .plan__button {
+        color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+
+.plan__top {
+    padding: 32px;
+    border: 2px solid black;
+}
+
+.plan__middle {
+    padding: 32px;
+    border: 2px solid black;
+}
+
+.plan__feature {
+    margin: 20px 0 0;
+}
+
+.plan__bottom {
+    padding: 32px;
+    border: 2px solid black
+}
+
+.plan__button {
+    padding: 12px;
+    border-radius: 24px;
+    width: 100%;
+}
+
+.plan__target {
+    font-size: 20px;
+}
+
+
