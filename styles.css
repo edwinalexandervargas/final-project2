@@ -13,7 +13,6 @@
     margin: 0 auto;
 }
 
-.footer__container,
 .container {
     padding: 80px 0;
 }
@@ -444,13 +443,16 @@ li {
 /* footer */
 
 
-.footer__columns {
+.footer__column {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+
 }
 
 .footer__columns {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
 }
