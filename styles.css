@@ -327,25 +327,56 @@ li {
 /* plans */
 .plans {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 1rem;
+    max-width: 1200px; 
 }
 
-.plan {
-    display: flex;
-    justify-content: space-around;
+.plans .plan:nth-child(2) {
+    color: white;
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%,
+     rgb(102, 126, 234) 100%);
 }
+
+
+.plan {
+    flex: 1 1 300px;
+    max-width: 380px;
+    min-width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.plan__stripe {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+
+.plans .plan:nth-child(3) {
+     border-top: (115deg, rgb(245, 101, 101) 0%, 
+     rgb(254, 178, 178) 100%);
+}
+
+
+
 
 .plan__name {
     font-size: 20px;
+    font-weight: 700;
 }
 
 .plan__price {
-    font-size: 48px;
+    font-size: 54px;
+    margin: 4px 0 4px 0;
 }
 
 .plan__duration {
-    font-size: 12px;
+    color: #a0aec0;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
 }
 
 .plan__top,
@@ -357,14 +388,18 @@ li {
 
 
 .plan__top {
-    padding: 32px;
-    border: 2px solid black;
+    padding: 48px;
 }
 
 .plan__middle {
     padding: 32px;
-    border: 2px solid black;
 }
+
+.plans .plan:nth-child(2) .plan__middle {
+    border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
+}
+
 
 .plan__feature {
     margin: 20px 0 0;
@@ -372,15 +407,39 @@ li {
 
 .plan__bottom {
     padding: 32px;
-    border: 2px solid black
 }
 
-.plan__button {
+
+.bttn {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
     padding: 12px;
     border-radius: 24px;
+    border: none;
     width: 100%;
     cursor: pointer;
 }
+
+.plan__button--first {
+    background: linear-gradient(115deg, 
+    rgb(56, 178, 172) 0%, 
+    rgb(129, 230, 217) 100%);
+}
+
+.plan__button--middle {
+    color: rgba(80, 17, 204);
+    background-color: white;
+    border-radius: ;
+}
+
+.plan__button--last {
+    background: linear-gradient(115deg, 
+    rgb(245, 101, 101) 0%, 
+    rgb(254, 178, 178) 100%);
+}
+
+
 
 .plan__target {
     font-size: 20px;
