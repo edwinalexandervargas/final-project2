@@ -18,8 +18,6 @@ a {
 }
 
 .footer__row {
-    width: 1200vh;
-    max-width: none;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 32px;
@@ -30,7 +28,6 @@ a {
 }
 
 .footer__container {
-    /* padding: 80px 0; */
     max-width: 1200px;
     background-color: rgb(100, 21, 255);
 }
@@ -350,16 +347,15 @@ li {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.plan__stripe {
-    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+
+
+.plan:nth-child(1) .plan__top {
+    border-top: 8px solid teal;
 }
 
-
-.plans .plan:nth-child(3) {
-     border-top: (115deg, rgb(245, 101, 101) 0%, 
-     rgb(254, 178, 178) 100%);
+.plan:nth-child(3) .plan__top {
+    border-top: 8px solid lightcoral;     
 }
-
 
 
 
@@ -383,6 +379,7 @@ li {
 .plan__middle,
 .plan__bottom {
     text-align: center;
+    
 }
 
 
@@ -393,16 +390,26 @@ li {
 
 .plan__middle {
     padding: 32px;
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
 }
 
-.plans .plan:nth-child(2) .plan__middle {
+.plan:nth-child(2) .plan__middle {
     border-top: 2px solid rgb(102, 126, 234);
     border-bottom: 2px solid rgb(102, 126, 234);
 }
 
 
+
 .plan__feature {
     margin: 20px 0 0;
+    color: #718096;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.plan:nth-child(2) .plan__feature {
+    color: #f7fafc;
 }
 
 .plan__bottom {
@@ -443,6 +450,7 @@ li {
 
 .plan__target {
     font-size: 20px;
+    font-weight: 700;
 }
 
 
@@ -565,17 +573,13 @@ li {
 
 footer {
     color: white;
-    padding: 96px 32px;
+    padding: 80px 32px 60px;
     background-color: rgb(100, 21, 255);
-    margin-bottom: -32px;
-    position: relative;
-    overflow: hidden;
 }
 
 .footer__column {
     display: flex;
     flex-direction: column;
-
 }
 
 .footer__columns {
@@ -595,6 +599,7 @@ footer {
 
 .footer__divider {
     margin: 48px;
+    width: 100%;
     border: 1px solid rgba(192, 192, 192, 0.459);
 }
 
@@ -616,7 +621,7 @@ footer {
 
 .footer__end {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
