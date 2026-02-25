@@ -11,9 +11,6 @@ a {
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 
 
@@ -599,17 +596,29 @@ li {
     border-radius: 40px;
     margin: 12px;
     cursor: pointer;
+    transition: opacity 300ms ease;
 }
 
 
 
 .bttn__start:nth-child(1) {
+    border: none;
     background-color: #f56565;
+}
+
+.bttn__start:nth-child(1):hover {
+    opacity: 0.85;
 }
 
 .bttn__start:nth-child(2) {
     border: 1px solid silver;
     background-color: rgb(100, 21, 255);
+    transition: background-color 0.3s ease;
+}
+
+.bttn__start:nth-child(2):hover {
+    background-color: white;
+    color: #6415ff;
 }
 
 /* footer */
@@ -687,3 +696,143 @@ footer {
 .footer__social--link:hover {
     opacity: 0.85;
 }
+
+/* media queries */
+
+@media(max-width: 1280px) {
+    header .row {
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 1024px) {
+    .plan {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .section__img {
+        height: 300px;
+        width: 500px;
+        margin-top: 24px;
+    }
+
+    .steps__description {
+        margin-left: 24px;
+        width: 60%;
+    }
+
+
+    
+   
+    footer {
+        padding: 80px 32px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container,
+    .row,
+    .features,
+    .plan,
+    .section-info-main,
+    #header,
+    #quality,
+    #steps,
+    #values {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .email-group {
+        flex-direction: column;
+    }
+
+    .header__description,
+    .section__info,
+    .step__description,
+    .section__description {
+        text-align: center;
+    }
+    .header__img,
+    .section__img {
+        height: 300px;
+    }
+
+     
+    
+
+    .feature__para {
+        font-size: 16px;
+    }
+
+    .steps__list,
+    .step,
+    .step__title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .value__list--wrapper,
+    .value {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .value__list {
+        margin: 12px 24px;
+    }
+
+    .value__name {
+        font-size: 24px;
+        margin: 6px 12px;
+    }
+
+    .section__info,
+    .section__para {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    
+
+    .start__section {
+        flex-direction: column;
+    }
+
+    .start__buttons {
+        margin-top: 24px;
+    }
+
+    .footer__columns{
+        display: flex;
+    }
+
+    .footer__column {
+        width: calc(100% / 2);
+        flex: wrap;
+    }
+
+
+    .footer__end {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__copyright {
+        margin: 32px 0;
+    }
+    
+
+    
+
+}
+
+  
+  
