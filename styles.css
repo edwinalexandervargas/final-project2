@@ -719,6 +719,10 @@ footer {
         width: 400px;
     }
 
+    .feature--wrapper {
+        width: calc(100% / 2);
+    }
+    
    
     footer {
         padding: 80px 32px;
@@ -743,8 +747,32 @@ footer {
         display: none;
     }
 
+    .header__email--input {
+        height: 68px;
+    }
+
+    .header__email--btn {
+        position: static;
+        width: 100%;
+        margin: 0;
+        margin-top: 12px;
+        height: 68px;
+    }
+
+    .header__figure {
+        width: 100%;
+    }
+
     .email-group {
         flex-direction: column;
+    }
+
+    .header__description {
+        width: 100%;
+    }
+
+    .feature--wrapper {
+        width: 50%;
     }
 
     .header__description,
@@ -756,7 +784,10 @@ footer {
     .header__img,
     .section__img {
         width: 100%;
-        height: 300px;
+    }
+
+    .section__figure {
+        width: 100%;
     }
 
     .testimonials__img {
@@ -766,6 +797,20 @@ footer {
 
     .feature__para {
         font-size: 16px;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .figure__img--wrapper {
+        align-self: center;
+    }
+
+    .feature__description {
+        margin: 0;
+        align-items: center;
     }
 
     .steps__list,
