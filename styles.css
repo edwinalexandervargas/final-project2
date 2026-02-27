@@ -797,6 +797,7 @@ footer {
 
     .feature__para {
         font-size: 16px;
+        text-align: center;
     }
 
     .feature {
@@ -821,6 +822,17 @@ footer {
         flex-direction: column;
     }
 
+    .steps__description {
+        margin: 0;
+    }
+
+    .testimonial__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
 
 
     .value__name {
@@ -841,6 +853,7 @@ footer {
 
     .start__buttons {
         margin-top: 24px;
+        flex-direction: column;
     }
 
    
@@ -849,7 +862,7 @@ footer {
     }
 
     .bttn__start {
-        width: 150px;
+        white-space: nowrap;
     }
 
     .start__title {
@@ -864,6 +877,7 @@ footer {
 
     .footer__column {
         min-width: calc(100% /5);
+        align-items: center;
     }
 
 
@@ -874,6 +888,7 @@ footer {
 
     .footer__copyright {
         margin: 32px 0;
+        text-align: center;
     }
 
     
